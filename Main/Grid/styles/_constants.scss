@@ -1,0 +1,21 @@
+/*Variables*/
+$wincBlue: #686de0;
+$primaryColor: #c3cfe2;
+$textLight: #fff;
+$textDark: rgb(80, 80, 80);
+
+/*Mixins */
+
+@mixin flexcenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin global {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  line-height: 1.6rem;
+}

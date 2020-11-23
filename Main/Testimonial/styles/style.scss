@@ -1,0 +1,60 @@
+@import "./tools";
+* {
+    @include global();
+}
+
+html {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+    background-color: $primaryColor;
+    margin: 2rem;
+}
+
+.card {
+    @include flexcenter();
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: white;
+    text-align: left;
+    border-radius: 1rem;
+    position: relative;
+    margin: auto auto;
+    .card__about {
+        padding: 40px;
+        margin-bottom: 10px;
+        color: $textDark;
+        font-weight: normal;
+    }
+    .card__image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: absolute;
+        margin: 20px 0px;
+        bottom: 80px;
+        border: solid 4px white;
+    }
+    .card__footer {
+        @include flexcenter();
+        width: 320px;
+        height: 140px;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        background-color: $wincBlue;
+    }
+    .card__footer--name {
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: $textLight;
+        padding: $verticalPadding;
+    }
+    .card__footer--link {
+        color: $primaryColor;
+        letter-spacing: 2px;
+        text-decoration: none;
+    }
+}

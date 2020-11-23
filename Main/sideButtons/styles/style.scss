@@ -1,0 +1,86 @@
+        @import './variables';
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto Slab", serif;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        
+        .nav-container {
+            position: absolute;
+            right: 0;
+            top: 40%;
+            .nav-link {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                text-decoration: none;
+                color: white;
+                padding: 30px 0px 30px 0px;
+                width: 350px;
+                margin-right: -250px;
+                transition: 0.7s;
+                &:hover {
+                    transform: translateX(-250px);
+                }
+            }
+            .nav__blog {
+                background-color: $blog-color;
+                &::before {
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    content: "\f5fc";
+                }
+            }
+            .nav__twitter {
+                background-color: $twitter-color;
+                &::before {
+                    font-family: "Font Awesome 5 Brands";
+                    font-weight: 900;
+                    content: "\f099";
+                }
+            }
+            .nav__facebook {
+                background-color: $facebook-color;
+                &::before {
+                    font-family: "Font Awesome 5 Brands";
+                    font-weight: 900;
+                    content: "\f39e";
+                }
+            }
+            .nav__linkedin {
+                background-color: $linkedin-color;
+                &::before {
+                    font-family: "Font Awesome 5 Brands";
+                    font-weight: 900;
+                    content: "\f0e1";
+                }
+            }
+            .nav__github {
+                background-color: $github-color;
+                &::before {
+                    font-family: "Font Awesome 5 Brands";
+                    font-weight: 900;
+                    content: "\f09b";
+                }
+            }
+        }
+        
+        .nav__icon::before {
+            display: inline-block;
+            font-style: normal;
+            font-size: 2rem;
+            font-variant: normal;
+            text-align: center;
+            text-decoration: none;
+            margin-right: 4rem;
+            text-rendering: auto;
+            margin: 0px 50px 0px 30px;
+            -webkit-font-smoothing: antialiased;
+        }

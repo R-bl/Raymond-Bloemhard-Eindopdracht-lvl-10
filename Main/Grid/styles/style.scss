@@ -1,0 +1,65 @@
+@import "./constants";
+* {
+    @include global();
+}
+
+html {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+    background-color: $primaryColor;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper-grid {
+    margin: 20px 10px;
+}
+
+.btn-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in;
+    border-radius: 1rem;
+    margin: 10px;
+    &:hover {
+        background-color: gray;
+    }
+}
+
+img {
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: 0.5s ease-in;
+    border-radius: 1rem;
+}
+
+img {
+    &:hover {
+        opacity: 0;
+    }
+}
+
+@media (min-width:600px) {
+    .wrapper-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+@media (min-width:1025px) {
+    .wrapper-grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 400px);
+    }
+}

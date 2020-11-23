@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.nav-container {
+  position: absolute;
+  right: 0;
+  top: 40%;
+}
+
+.nav-container .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 30px 0px 30px 0px;
+  width: 350px;
+  margin-right: -250px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.nav-container .nav-link:hover {
+  -webkit-transform: translateX(-250px);
+          transform: translateX(-250px);
+}
+
+.nav-container .nav__blog {
+  background-color: #e17b77;
+}
+
+.nav-container .nav__blog::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f5fc";
+}
+
+.nav-container .nav__twitter {
+  background-color: #00aced;
+}
+
+.nav-container .nav__twitter::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f099";
+}
+
+.nav-container .nav__facebook {
+  background-color: #3b5998;
+}
+
+.nav-container .nav__facebook::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f39e";
+}
+
+.nav-container .nav__linkedin {
+  background-color: #007bb6;
+}
+
+.nav-container .nav__linkedin::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f0e1";
+}
+
+.nav-container .nav__github {
+  background-color: #333;
+}
+
+.nav-container .nav__github::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f09b";
+}
+
+.nav__icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-size: 2rem;
+  font-variant: normal;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 4rem;
+  text-rendering: auto;
+  margin: 0px 50px 0px 30px;
+  -webkit-font-smoothing: antialiased;
+}
+/*# sourceMappingURL=style.css.map */
